@@ -25,7 +25,7 @@ class Peliculas extends Component {
         this.setState({
             peliculas: [
                 { titulo: "Batman V Superman", image: "https://cde.laprensa.e3.pe/ima/0/0/1/2/8/128722.jpg" },
-                { titulo: "Gran Torino", image: "https://pics.filmaffinity.com/gran_torino-278262332-large.jpg" }
+                { titulo: "Gran Torino", image: "https://cde.laprensa.e3.pe/ima/0/0/1/2/8/128722.jpg" }
             ],
             nombre: "Arturo Morales",
             favorita: {}
