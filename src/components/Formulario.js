@@ -54,7 +54,6 @@ class Formulario extends Component {
                     <div id="content">
                         <h2 className="subheader">Formulario</h2>
                         {/*Mostrar datos del formulario*/}
-                        {/*Prueba*/}
                         {this.state.user.nombre &&
                             <div id="user-data">
                                 <p>Nombre: <strong>{user.nombre}</strong></p>
