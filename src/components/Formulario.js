@@ -53,9 +53,7 @@ class Formulario extends Component {
                 <div className="center">
                     <div id="content">
                         <h2 className="subheader">Formulario</h2>
-                        {/*Mostrar 
-                            Prueba
-                        */}
+                        {/*Mostrar datos del formulario*/}
                         {this.state.user.nombre &&
                             <div id="user-data">
                                 <p>Nombre: <strong>{user.nombre}</strong></p>
@@ -68,7 +66,7 @@ class Formulario extends Component {
                             /*Crear formulario*/
                             <form className="mid-form" onSubmit={this.recibirFormulario} onChange={this.recibirFormulario}>
                                 <div className="form-group">
-                                    <label htmlFor="nombre">Prueba</label>
+                                    <label htmlFor="nombre">Nombre</label>
                                     <input type="text" name="nombre" ref={this.nombreRef} />
                                 </div>
 
