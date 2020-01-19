@@ -20,9 +20,9 @@ class Articles extends Component {
         var search = this.props.search;
         if (home === 'true') {
             this.getLastArticles();
-        }else if(search && search != null && search != undefined){
+        } else if (search && search != null && search != undefined) {
             this.getArticlesBySearch(search);
-        }else {
+        } else {
             this.getArticles();
         }
     }
@@ -35,7 +35,7 @@ class Articles extends Component {
                         articles: res.data.articles,
                         status: 'success'
                     });
-                } 
+                }
             }).catch(err => {
                 this.setState({
                     articles: [],
@@ -71,9 +71,10 @@ class Articles extends Component {
                 return (
                     <article className="article-item" id="article-template">
                         <div className="image-wrap">
-                            {article.image !== null ? (
-                                <img src={this.url + 'get-image/' + article.image} alt={article.title} />
-                            ) : (
+                            {
+                                article.image !== null ? (
+                                    <img src={this.url + 'get-image/' + article.image} alt={article.title} />
+                                ) : (
                                     <img src={ImageDefault} alt={article.title} />
                                 )
                             }
