@@ -236,7 +236,8 @@ body {
 }
 
 input[type="text"],
-textarea{
+textarea,
+input[type="file"]{
   width: 100%;
   min-height: 30px;
   border: 1px solid #ccc;
@@ -257,6 +258,16 @@ textarea{
   max-width: 100%;
   min-height: 150px;
   max-height: 300px;
+}
+
+input[type="submit"]{
+  margin-top: 15px;
+}
+
+.thumb{
+  width: 170px;
+  float: left;
+  display: block;
 }
 
 .radibuttons{

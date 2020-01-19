@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Redirect } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 
 class Sidebar extends Component {
 
@@ -22,16 +22,16 @@ class Sidebar extends Component {
 
         if (this.state.redirect) {
             return (
-                <Redirect to={'/redirect/'+this.state.search} />
+                <Redirect to={'/redirect/' + this.state.search} />
             );
         }
 
         return (
             <aside id="sidebar">
-                {this.props.blog == "true" &&
+                {this.props.blog === "true" &&
                     <div id="nav-blog" className="sidebar-item">
                         <h3>Puedes hacer esto</h3>
-                        <a href="#" className="btn btn-success">Crear artículo</a>
+                        <Link to={'/blog/crear'} className="btn btn-success">Crear artículo</Link>
                     </div>
                 }
 
